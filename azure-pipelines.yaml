@@ -14,11 +14,11 @@ steps:
       command: build
       Dockerfile: "./Dockerfile"
       repository: 'shivakrishna99/saleordashboard:AZDEV'
-      tags: "latest"
-  - task: Docker@2
+      tags: "my-repo:latest"
+   - task: Docker@2
     inputs:
       command: push
       repository: 'shivakrishna99/saleordashboard:AZDEV'
-      tags: "latest"
+      tags: "my-repo:latest"
       containerRegistry: 'Docker-Hub-Connection'
 
