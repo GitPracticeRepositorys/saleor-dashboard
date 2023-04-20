@@ -13,5 +13,5 @@ steps:
     inputs:
       command: buildAndPush
       Dockerfile: "./Dockerfile"
-      tags: "shaikkhajaibrahim/saleordashboard:AZDEV"
-      containerRegistry: DockerHub
+      tags: "shivakrishna99/saleordashboard:AZDEV"
+      containerRegistry: Docker-Hub-Connection
