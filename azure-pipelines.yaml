@@ -6,14 +6,14 @@ trigger:
 steps:
   - task: Docker@2
     inputs:
-      command: build
-      Dockerfile: ./Dockerfile
-      repository: shivakrishna99/saleordashboard:AZDEV
-      tags: my-repo:latest
+      command: 'build'
+      Dockerfile: './Dockerfile'
+      repository: 'shivakrishna99/saleordashboard'
+      tags: "latest"
   - task: Docker@2
     inputs:
-      command: push
-      repository: shivakrishna99/saleordashboard:AZDEV
-      tags: my-repo:latest
-      containerRegistry: Docker-Hub-Connection
+      command: 'push'
+      repository: 'shivakrishna99/saleordashboard'
+      tags: "latest"
+      containerRegistry: 'Docker-Hub-Connection'
 
