@@ -11,8 +11,13 @@ trigger:
 steps:
   - task: Docker@2
     inputs:
-      command: buildAndPush
+      command: build
       Dockerfile: "./Dockerfile"
       tags: "shivakrishna99/saleordashboard:AZDEV"
+
+  - task: Docker@2
+    inputs:
+      command: push
+      tags: "shivakrishna99/saleordashboard:AZDEV"
       containerRegistry: Docker-Hub-Connection
-      tags: "my-repo:latest"
+
