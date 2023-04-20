@@ -16,9 +16,9 @@ steps:
       repository: 'shivakrishna99/saleordashboard:AZDEV'
       tags: "my-repo:latest"
    - task: Docker@2
-    inputs:
-      command: push
-      repository: 'shivakrishna99/saleordashboard:AZDEV'
-      tags: "my-repo:latest"
-      containerRegistry: 'Docker-Hub-Connection'
+     inputs:
+       command: push
+       repository: 'shivakrishna99/saleordashboard:AZDEV'
+       tags: "my-repo:latest"
+       containerRegistry: 'Docker-Hub-Connection'
 
